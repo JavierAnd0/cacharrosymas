@@ -1,5 +1,4 @@
 import React from 'react';
-//import Logo from "./assets/img/Logo.png";  <img src={Logo} alt="Logo" className="loading-logo" />
 import './LoadingScreen.css'; 
 
 
