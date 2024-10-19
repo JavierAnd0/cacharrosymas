@@ -6,7 +6,7 @@ const ProductosPage = () => {
     <>
     
     <Header />
-    <div>ContactanosPage</div>
+    <div>ProductosPage</div>
     
     </>
   )
