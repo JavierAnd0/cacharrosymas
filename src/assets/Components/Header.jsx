@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from "../img/LogoCacharreria.png";          
 import { Link } from 'react-router-dom';
-
+import '../../css/Header.css';
 
 const NavBar = () => {
   return (
