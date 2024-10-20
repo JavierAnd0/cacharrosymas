@@ -1,34 +1,35 @@
-import React, { Component } from 'react'
-import { MenuItem, Menu, Segment } from 'semantic-ui-react'
+import React from 'react';
+//import Logo from "../assets/img/Logo.jpeg";          <img className="Logo" src={Logo} alt="logo" />
+import { Link } from 'react-router-dom';
 
-export default class MenuExampleInvertedSecondary extends Component {
-  state = { activeItem: 'home' }
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+const NavBar = () => {
+  return (
+    <div className="navbar">
+      <div className="navbar-section">
 
-  render() {
-    const { activeItem } = this.state
+      </div>
+       
+      <div className="navbar-section links">
+        <Link to="/inicio"><i className="home icon"></i></Link>
+        <Link to="/productos">Productos</Link>
+        <Link to="/sobre-nosotros">Nosotros</Link>
+        <Link to="/contactanos">Contactanos</Link>
+      </div>
 
-    return (
-      <Segment inverted>
-        <Menu inverted pointing secondary>
-          <MenuItem
-            name='home'
-            active={activeItem === 'home'}
-            onClick={this.handleItemClick}
-          />
-          <MenuItem
-            name='messages'
-            active={activeItem === 'messages'}
-            onClick={this.handleItemClick}
-          />
-          <MenuItem
-            name='friends'
-            active={activeItem === 'friends'}
-            onClick={this.handleItemClick}
-          />
-        </Menu>
-      </Segment>
-    )
-  }
-}
+
+      <div className="navbar-section">
+        <div className="ui vertical animated button" tabIndex="0">
+          <div className="hidden content">
+            <Link to="/login">Acceder</Link>
+          </div>
+          <div className="visible content">
+            <i className="user icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default NavBar;
