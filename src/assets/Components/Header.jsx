@@ -11,7 +11,7 @@ const NavBar = () => {
       </div>
        
       <div className="navbar-section links">
-        <Link to="/inicio"><img className="Logo" src={Logo} alt="logo" /></Link>
+        <Link to="/"><img className="Logo" src={Logo} alt="logo" /></Link>
         <Link to="/productos">Productos</Link>
         <Link to="/sobre-nosotros">Nosotros</Link>
         <Link to="/contactanos">Contactanos</Link>
@@ -29,6 +29,7 @@ const NavBar = () => {
         </div>
       </div>
     </div>
+
   );
 };
 

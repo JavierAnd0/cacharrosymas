@@ -9,6 +9,8 @@ import SobreNosotrosPage from './assets/Pages/SobreNosotrosPage.jsx';
 import ContactanosPage from './assets/Pages/ContactanosPage.jsx';
 import LogeoPage from './assets/Pages/LogeoPage.jsx';
 import RegistroPage from './assets/Pages/RegistroPage.jsx';
+import 'semantic-ui-css/semantic.min.css';
+
 
 const pageVariants = {
   initial: {
