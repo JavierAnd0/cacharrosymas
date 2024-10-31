@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from "../img/LogoCacharreria.png";          
 import { Link } from 'react-router-dom';
+import '../Css/HeaderStyle.css'
 
 
 const NavBar = () => {
@@ -11,8 +12,8 @@ const NavBar = () => {
       </div>
        
       <div className="navbar-section links">
-        <Link to="/inicio"><img className="Logo" src={Logo} alt="logo" /></Link>
-        <Link to="/productos">Productos</Link>
+        <Link  to="/inicio"><img className="Logo" src={Logo} alt="logo" /></Link>
+        <Link className="" to="/productos">Productos</Link>
         <Link to="/sobre-nosotros">Nosotros</Link>
         <Link to="/contactanos">Contactanos</Link>
       </div>
